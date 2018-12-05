@@ -36,7 +36,7 @@
 <img src="https://imgur.com/iTYhkcV.png" width="250"></img>  
 4. 원하는 요일과 시간을 선택하고 우측 상단에 있는 저장을 선택합니다.
 <img src="https://imgur.com/3PJjfjK.png" width="250"></img>  
-5. 미리 알림 시간과 일정을 정하였으면 우측 상단에 있는 저장을 선택합니다. 일정은 여러 개 생성 가능합니다.
+5. 미리 알림 시간과 일정을 정하였으면 우측 상단에 있는 저장을 선택합니다. 일정은 여러 개 생성 가능합니다.  
 <img src="https://imgur.com/WtddLDc.png" width="250"></img>  
 5. 저장 시 선택한 섬의 알림이 활성화됩니다.  
 <img src="https://imgur.com/zR8GuqQ.png" width="250"></img>  

@@ -1,0 +1,120 @@
+<resources>
+    <string name="app_name">섬 타이머</string>
+
+    <!-- View -->
+    <string name="notification_time_title">미리 알림</string>
+    <string name="vibration_title">진동 울리기</string>
+    <string name="add_schedule">여기를 클릭하여 일정 추가하기</string>
+    <string name="schedule">일정</string>
+    <string name="option">옵션</string>
+
+    <!-- Toast -->
+    <string name="schedule_invalid">하나 이상의 요일과 시간을 선택해주세요.</string>
+    <string name="invalid_island">존재하지 않는 섬입니다.</string>
+    <string name="empty_schedule">하나 이상의 일정을 추가해야 합니다.</string>
+
+    <!-- Notification -->
+    <string name="notification_title">%1$s에 %2$s 등장 예정</string>
+
+    <!-- Example -->
+    <string name="island_name">섬 이름</string>
+    <string name="notification_time">10분 전</string>
+    <string name="days">월 화 수 목</string>
+
+    <!-- Days -->
+    <string-array name="day_of_week">
+        <item>일</item>
+        <item>월</item>
+        <item>화</item>
+        <item>수</item>
+        <item>목</item>
+        <item>금</item>
+        <item>토</item>
+    </string-array>
+
+    <!-- Notification time -->
+    <integer-array name="notification_time">
+        <item>0</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+    </integer-array>
+
+    <string-array name="notification_time_text">
+        <item>정시</item>
+        <item>5분 전</item>
+        <item>10분 전</item>
+        <item>20분 전</item>
+        <item>30분 전</item>
+    </string-array>
+
+    <!-- Island list -->
+    <string-array name="island_list">
+        <item>두키 섬</item>
+        <item>신월의 섬</item>
+        <item>스피다 섬</item>
+        <item>잠자는 노래 섬</item>
+        <item>환각의 섬</item>
+    </string-array>
+
+    <integer-array name="island_interval">
+        <item>14400000</item>
+        <item>14400000</item>
+        <item>21600000</item>
+        <item>10800000</item>
+        <item>7200000</item>
+    </integer-array>
+
+    <!-- Island timetable -->
+    <string-array name="dooki">
+        <item>1시 10분</item>
+        <item>5시 10분</item>
+        <item>9시 10분</item>
+        <item>13시 10분</item>
+        <item>17시 10분</item>
+        <item>21시 10분</item>
+    </string-array>
+
+    <string-array name="sleeping_song">
+        <item>0시 40분</item>
+        <item>3시 40분</item>
+        <item>6시 40분</item>
+        <item>9시 40분</item>
+        <item>12시 40분</item>
+        <item>15시 40분</item>
+        <item>18시 40분</item>
+        <item>21시 40분</item>
+    </string-array>
+
+    <string-array name="speeda">
+        <item>1시 50분</item>
+        <item>7시 50분</item>
+        <item>13시 50분</item>
+        <item>19시 50분</item>
+    </string-array>
+
+    <string-array name="hallucination">
+        <item>0시 20분</item>
+        <item>2시 20분</item>
+        <item>4시 20분</item>
+        <item>6시 20분</item>
+        <item>8시 20분</item>
+        <item>10시 20분</item>
+        <item>12시 20분</item>
+        <item>14시 20분</item>
+        <item>16시 20분</item>
+        <item>18시 20분</item>
+        <item>20시 20분</item>
+        <item>22시 20분</item>
+    </string-array>
+
+    <string-array name="new_moon">
+        <item>3시 20분</item>
+        <item>7시 20분</item>
+        <item>11시 20분</item>
+        <item>15시 20분</item>
+        <item>19시 20분</item>
+        <item>23시 20분</item>
+    </string-array>
+</resources>

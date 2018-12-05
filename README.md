@@ -41,4 +41,5 @@ https://drive.google.com/file/d/1i1-R6JS7-qu2d2Zi55E2ml9hb6Y21Xt8/view?usp=shari
 5. 저장 시 선택한 섬의 알림이 활성화됩니다.  
 <img src="https://imgur.com/zR8GuqQ.png" width="250"></img>  
 6. 시간이 되면 알림이 뜹니다. 사진의 경우 아이콘을 제대로 가져오지 못하나 실제 사용 시 제대로 표시합니다.  
-<img src="https://imgur.com/928TsoZ.png" width="250"></img>  
+<img src="https://imgur.com/928TsoZ.png" width="250"></img>
+<img src="https://imgur.com/Yh6QGPp.png" width="250"></img>

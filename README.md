@@ -29,7 +29,7 @@ https://drive.google.com/file/d/1i1-R6JS7-qu2d2Zi55E2ml9hb6Y21Xt8/view?usp=shari
 #### 버그, 개선점 및 기타 문의는 이슈 등록 또는 md2ybh@gmail.com으로 보내주세요.
 
 ## 사용법
-1. 첫 실행 시 모든 알람은 비활성화되어 있습니다.  
+1. 첫 실행 시 모든 알림은 비활성화되어 있습니다.  
 <img src="https://imgur.com/BVmJeCD.png" width="250"></img>
 2. 알림을 받고자 하는 섬을 클릭합니다.  
 <img src="https://imgur.com/iTYhkcV.png" width="250"></img>

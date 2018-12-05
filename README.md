@@ -24,7 +24,7 @@
 이 외 비주기적(캘린더 일정)으로 등장하는 섬이나 이벤트는 아직 고려되어 있지 않으나 다양한 방법을 생각하고 있습니다.
 
 ## 다운로드
-https://drive.google.com/file/d/1i1-R6JS7-qu2d2Zi55E2ml9hb6Y21Xt8/view?usp=sharing
+추후 예정
 
 #### 버그, 개선점 및 기타 문의는 이슈 등록 또는 md2ybh@gmail.com으로 보내주세요.
 

@@ -30,14 +30,14 @@ https://drive.google.com/file/d/1i1-R6JS7-qu2d2Zi55E2ml9hb6Y21Xt8/view?usp=shari
 
 ## 사용법
 1. 첫 실행 시 모든 알림은 비활성화되어 있습니다.  
-<img src="https://imgur.com/BVmJeCD.png" width="250"></img>
 2. 알림을 받고자 하는 섬을 클릭합니다.  
-<img src="https://imgur.com/iTYhkcV.png" width="250"></img>
+<img src="https://imgur.com/BVmJeCD.png" width="250"></img>  
 3. 미리 알림 시간을 정하고 일정 칸 우측에 있는 + 버튼을 선택합니다.  
-<img src="https://imgur.com/3PJjfjK.png" width="250"></img>
+<img src="https://imgur.com/iTYhkcV.png" width="250"></img>  
 4. 원하는 요일과 시간을 선택하고 우측 상단에 있는 저장을 선택합니다.  
-<img src="https://imgur.com/WtddLDc.png" width="250"></img>
+<img src="https://imgur.com/3PJjfjK.png" width="250"></img>  
 5. 미리 알림 시간과 일정을 정하였으면 우측 상단에 있는 저장을 선택합니다.  
-<img src="https://imgur.com/zR8GuqQ.png" width="250"></img>
-6. 시간이 되면 알림이 뜹니다. 사진의 경우 아이콘을 제대로 가져오지 못하나 실제 사용 시 제대로 표시합니다.
-<img src="https://imgur.com/928TsoZ.png" width="250"></img>
+<img src="https://imgur.com/WtddLDc.png" width="250"></img>  
+<img src="https://imgur.com/zR8GuqQ.png" width="250"></img>  
+6. 시간이 되면 알림이 뜹니다. 사진의 경우 아이콘을 제대로 가져오지 못하나 실제 사용 시 제대로 표시합니다.  
+<img src="https://imgur.com/928TsoZ.png" width="250"></img>  

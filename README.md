@@ -34,7 +34,7 @@
 <img src="https://imgur.com/BVmJeCD.png" width="250"></img>  
 3. 미리 알림 시간을 정하고 일정 칸 우측에 있는 + 버튼을 선택합니다.  
 <img src="https://imgur.com/iTYhkcV.png" width="250"></img>  
-4. 원하는 요일과 시간을 선택하고 우측 상단에 있는 저장을 선택합니다.
+4. 원하는 요일과 시간을 선택하고 우측 상단에 있는 저장을 선택합니다.  
 <img src="https://imgur.com/3PJjfjK.png" width="250"></img>  
 5. 미리 알림 시간과 일정을 정하였으면 우측 상단에 있는 저장을 선택합니다. 일정은 여러 개 생성 가능합니다.  
 <img src="https://imgur.com/WtddLDc.png" width="250"></img>  

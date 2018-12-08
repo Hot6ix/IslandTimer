@@ -1,8 +1,8 @@
-package com.ybh.lostark.islandtimer
+package com.ybh.alarm.lostark
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.ybh.lostark.islandtimer.fragments.MasterFragment
+import com.ybh.alarm.lostark.fragments.MasterFragment
 
 class MainActivity : AppCompatActivity() {
 

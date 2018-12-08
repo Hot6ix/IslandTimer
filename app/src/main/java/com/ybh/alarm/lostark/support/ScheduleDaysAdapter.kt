@@ -1,14 +1,14 @@
-package com.ybh.lostark.islandtimer.support
+package com.ybh.alarm.lostark.support
 
 import android.content.Context
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
-import com.ybh.lostark.islandtimer.R
-import com.ybh.lostark.islandtimer.interfaces.OnItemClickListener
+import com.ybh.alarm.lostark.R
+import com.ybh.alarm.lostark.interfaces.OnItemClickListener
 import kotlinx.android.synthetic.main.schedule_days_item.view.*
 
 class ScheduleDaysAdapter(private val context: Context, private val used: IntArray? = null, private val selected: IntArray? = null): RecyclerView.Adapter<ScheduleDaysAdapter.ViewHolder>() {
@@ -23,15 +23,17 @@ class ScheduleDaysAdapter(private val context: Context, private val used: IntArr
     override fun getItemCount(): Int = days.size
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+
         if(used != null) {
-            if(used[position] == 1) {
-                holder.itemView.isEnabled = false
-            }
+            holder.itemView.isEnabled = used[holder.adapterPosition] != 1
         }
         if(selected != null) {
-            if(selected[position] == 1) {
+            if(selected[holder.adapterPosition] == 1) {
                 holder.itemView.isEnabled = true
                 holder.day.isSelected = true
+            }
+            else {
+                holder.day.isSelected = false
             }
         }
         holder.day.text = days[position]

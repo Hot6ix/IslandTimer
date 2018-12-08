@@ -3,6 +3,8 @@
     android:id="@+id/schedule_time"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:textSize="@dimen/text_summary"
     android:textColor="@drawable/text_selector"
-    android:padding="@dimen/padding10"
-    android:background="@drawable/selector" />
+    android:foreground="?attr/selectableItemBackground"
+    android:background="@drawable/time_selector"
+    style="?android:attr/borderlessButtonStyle" />

@@ -1,4 +1,4 @@
-package com.ybh.lostark.islandtimer
+package com.ybh.alarm.lostark
 
 import androidx.test.InstrumentationRegistry
 import androidx.test.runner.AndroidJUnit4

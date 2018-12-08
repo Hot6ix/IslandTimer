@@ -1,4 +1,4 @@
-package com.ybh.lostark.islandtimer.etc
+package com.ybh.alarm.lostark.etc
 
 data class TimerItem(
     var id: Int? = null,

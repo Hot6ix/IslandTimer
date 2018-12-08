@@ -1,4 +1,4 @@
-package com.ybh.lostark.islandtimer
+package com.ybh.alarm.lostark
 
 import org.junit.Test
 

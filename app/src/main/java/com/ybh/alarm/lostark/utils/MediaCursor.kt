@@ -1,10 +1,9 @@
-package com.ybh.lostark.islandtimer.utils
+package com.ybh.alarm.lostark.utils
 
 import android.content.Context
-import android.util.Log
-import com.ybh.lostark.islandtimer.R
-import com.ybh.lostark.islandtimer.etc.Island
-import com.ybh.lostark.islandtimer.etc.ScheduleItem
+import com.ybh.alarm.lostark.R
+import com.ybh.alarm.lostark.etc.Island
+import com.ybh.alarm.lostark.etc.ScheduleItem
 import java.util.ArrayList
 
 object MediaCursor {
@@ -17,6 +16,7 @@ object MediaCursor {
             Island.SPEEDA -> list[2]
             Island.SLEEPING_SONG -> list[3]
             Island.HALLUCINATION -> list[4]
+            Island.REED -> list[5]
             Island.NONE -> "Unknown"
         }
     }
@@ -29,6 +29,7 @@ object MediaCursor {
             list[2] -> Island.SPEEDA
             list[3] -> Island.SLEEPING_SONG
             list[4] -> Island.HALLUCINATION
+            list[5] -> Island.REED
             else -> Island.NONE
         }
     }
@@ -40,6 +41,7 @@ object MediaCursor {
             Island.SPEEDA -> context.resources.getStringArray(R.array.speeda)
             Island.HALLUCINATION -> context.resources.getStringArray(R.array.hallucination)
             Island.NEW_MOON -> context.resources.getStringArray(R.array.new_moon)
+            Island.REED -> context.resources.getStringArray(R.array.reed)
             Island.NONE -> throw Exception("Wrong island")
         }
     }
@@ -52,6 +54,7 @@ object MediaCursor {
             Island.SPEEDA -> intervals[2].toLong()
             Island.HALLUCINATION -> intervals[3].toLong()
             Island.NEW_MOON -> intervals[4].toLong()
+            Island.REED -> intervals[5].toLong()
             Island.NONE -> throw Exception("Wrong island")
         }
     }
@@ -63,8 +66,14 @@ object MediaCursor {
             Island.SLEEPING_SONG -> R.drawable.sleeping_song
             Island.SPEEDA -> R.drawable.speeda
             Island.HALLUCINATION -> R.drawable.hallucination
+            Island.REED -> R.drawable.reed
             Island.NONE -> throw Exception("Wrong island")
         }
+    }
+
+    fun getNotificationTimeByIndex(context: Context, index: Int): Int {
+        val timeArray = context.resources.getIntArray(R.array.notification_time)
+        return timeArray[index]
     }
 
     fun scheduleToString(schedule: ArrayList<ScheduleItem>): String {

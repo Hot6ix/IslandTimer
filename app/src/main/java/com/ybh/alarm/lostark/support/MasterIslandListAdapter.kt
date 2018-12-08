@@ -1,4 +1,4 @@
-package com.ybh.lostark.islandtimer.support
+package com.ybh.alarm.lostark.support
 
 import android.content.Context
 import android.graphics.Color
@@ -12,11 +12,11 @@ import android.widget.ImageView
 import android.widget.Switch
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.ybh.lostark.islandtimer.R
-import com.ybh.lostark.islandtimer.etc.Island
-import com.ybh.lostark.islandtimer.etc.TimerItem
-import com.ybh.lostark.islandtimer.fragments.MasterFragment
-import com.ybh.lostark.islandtimer.utils.MediaCursor
+import com.ybh.alarm.lostark.R
+import com.ybh.alarm.lostark.etc.Island
+import com.ybh.alarm.lostark.etc.TimerItem
+import com.ybh.alarm.lostark.fragments.MasterFragment
+import com.ybh.alarm.lostark.utils.MediaCursor
 import kotlinx.android.synthetic.main.master_timer_list_item.view.*
 
 class MasterIslandListAdapter(private val context: Context, private var list: ArrayList<TimerItem>): RecyclerView.Adapter<MasterIslandListAdapter.ViewHolder>() {
@@ -43,6 +43,8 @@ class MasterIslandListAdapter(private val context: Context, private var list: Ar
         }
 
         val timerItem = list.find { it.island == island }
+        holder.switch.isEnabled = timerItem != null
+
         if(timerItem != null) {
             val isEnabled = timerItem.switch
             holder.switch.isChecked = isEnabled
@@ -58,8 +60,8 @@ class MasterIslandListAdapter(private val context: Context, private var list: Ar
         }
         else {
             // Island not set
+            holder.switch.isChecked = false
             changeView(holder, false)
-            holder.switch.isEnabled = false
         }
     }
 
@@ -90,7 +92,7 @@ class MasterIslandListAdapter(private val context: Context, private var list: Ar
             }
             MasterFragment.SORT_BY_ENABLED -> {
                 islands.sortByDescending { islandName ->
-                    list.first { MediaCursor.getIslandName(context, it.island) == islandName  }.switch
+                    list.find { MediaCursor.getIslandName(context, it.island) == islandName  }?.switch
                 }
             }
         }

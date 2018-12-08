@@ -1,22 +1,17 @@
-package com.ybh.lostark.islandtimer.support
+package com.ybh.alarm.lostark.support
 
 import android.content.Context
 import android.graphics.drawable.GradientDrawable
-import android.graphics.drawable.shapes.RoundRectShape
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
 import android.widget.TextView
 import androidx.core.content.ContextCompat
-import androidx.recyclerview.widget.DividerItemDecoration
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.flexbox.FlexboxLayout
-import com.ybh.lostark.islandtimer.R
-import com.ybh.lostark.islandtimer.etc.ScheduleItem
-import com.ybh.lostark.islandtimer.utils.MediaCursor
+import com.ybh.alarm.lostark.R
+import com.ybh.alarm.lostark.etc.ScheduleItem
 import kotlinx.android.synthetic.main.detail_schedule_item.view.*
 
 class DetailScheduleAdapter(context: Context, private val timetable: Array<String>?, private val list: ArrayList<ScheduleItem>): RecyclerView.Adapter<RecyclerView.ViewHolder>() {

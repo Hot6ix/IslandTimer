@@ -1,9 +1,9 @@
-package com.ybh.lostark.islandtimer.utils
+package com.ybh.alarm.lostark.utils
 
 import android.content.ContentValues
 import android.content.Context
-import com.ybh.lostark.islandtimer.etc.Island
-import com.ybh.lostark.islandtimer.etc.TimerItem
+import com.ybh.alarm.lostark.etc.Island
+import com.ybh.alarm.lostark.etc.TimerItem
 import java.util.*
 
 class DatabaseCursor(context: Context) {

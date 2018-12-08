@@ -1,7 +1,6 @@
-package com.ybh.lostark.islandtimer.fragments
+package com.ybh.alarm.lostark.fragments
 
 import android.os.Bundle
-import android.util.Log
 import android.view.*
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
@@ -13,13 +12,13 @@ import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.ybh.lostark.islandtimer.R
-import com.ybh.lostark.islandtimer.etc.TimerItem
-import com.ybh.lostark.islandtimer.models.MainViewModel
-import com.ybh.lostark.islandtimer.support.DetailScheduleAdapter
-import com.ybh.lostark.islandtimer.utils.AlarmController
-import com.ybh.lostark.islandtimer.utils.DatabaseCursor
-import com.ybh.lostark.islandtimer.utils.MediaCursor
+import com.ybh.alarm.lostark.R
+import com.ybh.alarm.lostark.etc.TimerItem
+import com.ybh.alarm.lostark.models.MainViewModel
+import com.ybh.alarm.lostark.support.DetailScheduleAdapter
+import com.ybh.alarm.lostark.utils.AlarmController
+import com.ybh.alarm.lostark.utils.DatabaseCursor
+import com.ybh.alarm.lostark.utils.MediaCursor
 import kotlinx.android.synthetic.main.fragment_detail.*
 
 
@@ -73,8 +72,8 @@ class DetailFragment : androidx.fragment.app.Fragment(), DetailScheduleAdapter.O
 
             // set notification time
             if(it.notification < 0) {
-                detail_notification_spinner.setSelection(2) // 10 min
-                it.notification = 2 // 10 min
+                detail_notification_spinner.setSelection(1) // 10 min
+                it.notification = 1 // 10 min
             }
             else detail_notification_spinner.setSelection(it.notification)
         })
@@ -128,6 +127,7 @@ class DetailFragment : androidx.fragment.app.Fragment(), DetailScheduleAdapter.O
                     activity?.run {
                         supportFragmentManager.popBackStack()
                     }
+
                 }
                 true
             }

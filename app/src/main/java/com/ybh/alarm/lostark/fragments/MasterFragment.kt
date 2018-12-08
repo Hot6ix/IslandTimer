@@ -1,25 +1,23 @@
-package com.ybh.lostark.islandtimer.fragments
+package com.ybh.alarm.lostark.fragments
 
 import android.content.SharedPreferences
 import android.os.Bundle
 import android.preference.PreferenceManager
-import android.util.Log
 import android.view.*
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.ybh.lostark.islandtimer.R
-import com.ybh.lostark.islandtimer.etc.Island
-import com.ybh.lostark.islandtimer.etc.TimerItem
-import com.ybh.lostark.islandtimer.models.MainViewModel
-import com.ybh.lostark.islandtimer.support.MasterIslandListAdapter
-import com.ybh.lostark.islandtimer.utils.AlarmController
-import com.ybh.lostark.islandtimer.utils.DatabaseCursor
-import com.ybh.lostark.islandtimer.utils.MediaCursor
+import com.ybh.alarm.lostark.R
+import com.ybh.alarm.lostark.etc.Island
+import com.ybh.alarm.lostark.etc.TimerItem
+import com.ybh.alarm.lostark.models.MainViewModel
+import com.ybh.alarm.lostark.support.MasterIslandListAdapter
+import com.ybh.alarm.lostark.utils.AlarmController
+import com.ybh.alarm.lostark.utils.DatabaseCursor
 import kotlinx.android.synthetic.main.fragment_master.*
 import java.util.*
-import kotlin.Comparator
 
 class MasterFragment : androidx.fragment.app.Fragment(), MasterIslandListAdapter.OnListInteractionListener {
 
@@ -131,7 +129,19 @@ class MasterFragment : androidx.fragment.app.Fragment(), MasterIslandListAdapter
         item?.apply {
             switch = bool
             mDatabaseCursor.updateTimer(item)
+
+            if(bool) {
+                AlarmController.scheduleAlarm(context!!, item)
+                Toast.makeText(context, resources.getString(R.string.alarm_set_message), Toast.LENGTH_SHORT).show()
+            }
+            else {
+                AlarmController.cancelAlarm(context!!, item)
+                Toast.makeText(context, resources.getString(R.string.alarm_cancel_message), Toast.LENGTH_SHORT).show()
+            }
         }
+
+        if(mSortBy == SORT_BY_ENABLED)
+            mTimerListAdapter.updateList(mSortBy)
     }
 
     companion object {

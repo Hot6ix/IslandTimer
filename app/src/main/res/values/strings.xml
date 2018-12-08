@@ -7,14 +7,26 @@
     <string name="add_schedule">여기를 클릭하여 일정 추가하기</string>
     <string name="schedule">일정</string>
     <string name="option">옵션</string>
+    <string name="save">저장</string>
+    <string name="sort">정렬</string>
+    <string name="cancel">취소</string>
+    <string name="schedule_dialog_title_add">일정 추가</string>
+    <string name="schedule_dialog_title_edit">일정 변경</string>
+    <string name="sort_by_name">이름 순 보기</string>
+    <string name="sort_by_enabled">활성화 순 보기</string>
+    <string name="empty">비어 있음</string>
 
     <!-- Toast -->
     <string name="schedule_invalid">하나 이상의 요일과 시간을 선택해주세요.</string>
     <string name="invalid_island">존재하지 않는 섬입니다.</string>
     <string name="empty_schedule">하나 이상의 일정을 추가해야 합니다.</string>
+    <string name="full_schedule">더 이상 일정을 추가할 수 없습니다.</string>
+    <string name="alarm_set_message">알람이 활성화 되었습니다.</string>
+    <string name="alarm_cancel_message">알람이 비활성화 되었습니다.</string>
+    <string name="select_all">전체 선택/해제</string>
 
     <!-- Notification -->
-    <string name="notification_title">%1$s에 %2$s 등장 예정</string>
+    <string name="notification_title">%1$s - %2$s 등장 예정</string>
 
     <!-- Example -->
     <string name="island_name">섬 이름</string>
@@ -34,17 +46,17 @@
 
     <!-- Notification time -->
     <integer-array name="notification_time">
-        <item>0</item>
         <item>5</item>
         <item>10</item>
+        <item>15</item>
         <item>20</item>
         <item>30</item>
     </integer-array>
 
     <string-array name="notification_time_text">
-        <item>정시</item>
         <item>5분 전</item>
         <item>10분 전</item>
+        <item>15분 전</item>
         <item>20분 전</item>
         <item>30분 전</item>
     </string-array>
@@ -56,6 +68,7 @@
         <item>스피다 섬</item>
         <item>잠자는 노래 섬</item>
         <item>환각의 섬</item>
+        <item>우거진 갈대의 섬</item>
     </string-array>
 
     <integer-array name="island_interval">
@@ -64,6 +77,7 @@
         <item>21600000</item>
         <item>10800000</item>
         <item>7200000</item>
+        <item>10800000</item>
     </integer-array>
 
     <!-- Island timetable -->
@@ -115,6 +129,17 @@
         <item>11시 20분</item>
         <item>15시 20분</item>
         <item>19시 20분</item>
+        <item>23시 20분</item>
+    </string-array>
+
+    <string-array name="reed">
+        <item>2시 20분</item>
+        <item>5시 20분</item>
+        <item>8시 20분</item>
+        <item>11시 20분</item>
+        <item>14시 20분</item>
+        <item>17시 20분</item>
+        <item>20시 20분</item>
         <item>23시 20분</item>
     </string-array>
 </resources>

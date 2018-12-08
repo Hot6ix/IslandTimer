@@ -1,4 +1,4 @@
-package com.ybh.lostark.islandtimer.utils
+package com.ybh.alarm.lostark.utils
 
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase

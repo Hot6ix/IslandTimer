@@ -1,4 +1,4 @@
-package com.ybh.lostark.islandtimer.support
+package com.ybh.alarm.lostark.support
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -6,8 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.recyclerview.widget.RecyclerView
-import com.ybh.lostark.islandtimer.R
-import com.ybh.lostark.islandtimer.interfaces.OnItemClickListener
+import com.ybh.alarm.lostark.R
+import com.ybh.alarm.lostark.interfaces.OnItemClickListener
 import kotlinx.android.synthetic.main.schedule_timetable_item.view.*
 
 class ScheduleTimetableAdapter(private val context: Context, private val timetable: Array<String>, private val selected: IntArray? = null): RecyclerView.Adapter<ScheduleTimetableAdapter.ViewHolder>() {
@@ -25,6 +25,9 @@ class ScheduleTimetableAdapter(private val context: Context, private val timetab
             if(selected[position] == 1) {
                 holder.itemView.isEnabled = true
                 holder.time.isSelected = true
+            }
+            else {
+                holder.time.isSelected = false
             }
         }
         holder.time.text = timetable[position]

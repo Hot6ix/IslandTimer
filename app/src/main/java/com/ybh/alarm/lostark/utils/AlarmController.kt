@@ -1,4 +1,4 @@
-package com.ybh.lostark.islandtimer.utils
+package com.ybh.alarm.lostark.utils
 
 import android.app.AlarmManager
 import android.app.PendingIntent
@@ -6,8 +6,9 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import com.ybh.lostark.islandtimer.R
-import com.ybh.lostark.islandtimer.etc.TimerItem
+import android.widget.Toast
+import com.ybh.alarm.lostark.R
+import com.ybh.alarm.lostark.etc.TimerItem
 import java.text.SimpleDateFormat
 import java.util.*
 import kotlin.Comparator
@@ -92,7 +93,7 @@ object AlarmController {
         // show notification if time passed from expected time
         if(todayApproximateTime != null) {
             if(todayApproximateTime!!.before(approximateTime) && todayApproximateTime!!.after(today)) {
-                NotificationManager.showNotification(context, item, todayApproximateTime!!.time)
+                NotificationManager.showNotification(context, item, todayApproximateTime!!)
             }
         }
 
@@ -111,6 +112,9 @@ object AlarmController {
         }
 
 //        alarmManager.setExact(AlarmManager.RTC_WAKEUP, approximateTime.timeInMillis, intent)
+        val alarmInfo = AlarmManager.AlarmClockInfo(approximateTime.timeInMillis, intent)
+        alarmManager.setAlarmClock(alarmInfo, intent)
+//        Toast.makeText(context, context.getString(R.string.alarm_set_message), Toast.LENGTH_SHORT).show()
         Log.d("tagggg", "Alarm set [Island : ${item.island}, ${approximateTime.time}]")
     }
 
@@ -174,7 +178,7 @@ object AlarmController {
 
         // show notification if time passed from expected time
         if(approximateSchedule.before(firstSchedule) && approximateSchedule.after(today)) {
-            NotificationManager.showNotification(context, item, approximateSchedule.time)
+            NotificationManager.showNotification(context, item, approximateSchedule)
         }
 
         val intent = Intent(context, AlarmReceiver::class.java).let {

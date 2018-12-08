@@ -3,5 +3,6 @@
     android:enterFadeDuration="120"
     android:exitFadeDuration="120">
     <item android:state_selected="true" android:color="@android:color/white" />
-    <item android:color="@android:color/black" />
+    <item android:state_enabled="false" android:color="@android:color/white"/>
+    <item android:color="@color/colorPrimary" />
 </selector>

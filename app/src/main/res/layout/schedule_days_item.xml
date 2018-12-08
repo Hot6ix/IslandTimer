@@ -2,7 +2,12 @@
 <Button xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/schedule_day"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
+    android:textSize="@dimen/text_summary"
     android:textColor="@drawable/text_selector"
     android:padding="@dimen/padding10"
-    android:background="@drawable/selector" />
+    android:foreground="?attr/selectableItemBackground"
+    android:background="@drawable/day_selector"
+    android:minWidth="0dp"
+    android:minHeight="0dp"
+    style="?android:attr/borderlessButtonStyle" />

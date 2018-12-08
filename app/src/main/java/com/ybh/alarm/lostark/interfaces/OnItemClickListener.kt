@@ -1,4 +1,4 @@
-package com.ybh.lostark.islandtimer.interfaces
+package com.ybh.alarm.lostark.interfaces
 
 import android.view.View
 

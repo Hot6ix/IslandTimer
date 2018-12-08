@@ -1,4 +1,4 @@
-package com.ybh.lostark.islandtimer.etc
+package com.ybh.alarm.lostark.etc
 
 enum class Island {
     DOOKI,
@@ -6,5 +6,6 @@ enum class Island {
     SPEEDA,
     HALLUCINATION,
     NEW_MOON,
+    REED,
     NONE
 }

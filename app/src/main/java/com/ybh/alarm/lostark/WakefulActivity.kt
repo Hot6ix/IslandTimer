@@ -1,13 +1,11 @@
 package com.ybh.alarm.lostark
 
-import android.os.Build
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
 import android.view.WindowManager
+import androidx.appcompat.app.AppCompatActivity
 
 
-
-class WakeUpActivity : AppCompatActivity() {
+class WakefulActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,5 +18,30 @@ class WakeUpActivity : AppCompatActivity() {
         )
 
         finish()
+
+//        val island = intent.getSerializableExtra(AlarmReceiver.TIMER_ISLAND) as Island
+//        val actualTime = Calendar.getInstance().apply {
+//            timeInMillis = intent.getLongExtra(AlarmReceiver.TIMER_ACTUAL_TIME, 0)
+//        }
+//
+//        val dbCursor = DatabaseCursor(applicationContext)
+//        val item = dbCursor.getTimer(island)
+//
+//        Toast.makeText(applicationContext, "test", Toast.LENGTH_SHORT).apply {
+//            setGravity(Gravity.TOP, 0, 0)
+//        }.show()
+//
+//        NotificationManager.showNotification(applicationContext, item!!, actualTime)
+//        AlarmController.scheduleAlarm(applicationContext, item)=
+
+//        val island = intent.getSerializableExtra(AlarmReceiver.TIMER_ISLAND) as Island
+//        val actualTime = Calendar.getInstance().apply {
+//            timeInMillis = intent.getLongExtra(AlarmReceiver.TIMER_ACTUAL_TIME, 0)
+//        }
+//
+//        val dbCursor = DatabaseCursor(applicationContext)
+//        val item = dbCursor.getTimer(island)
+//        NotificationManager.showNotification(applicationContext, item!!, actualTime)
+//        AlarmController.scheduleAlarm(applicationContext, item)
     }
 }
